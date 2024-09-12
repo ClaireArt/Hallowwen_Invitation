@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Creepster;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 9999;
+}
+
+.logo {
+    color: white;
+    font-size: 3em;
+    padding: 5vh 5vw;
+}
+
+.navigation {
+    padding: 5vh 0;
+    display: flex;
+}
+
+.Home,
+.About,
+.Service,
+.Contact {
+    margin: 0 1vw;
+    font-size: 3em;
+    color: white;
+    text-decoration: none;
+    z-index: 9999;
+}
+
+.Home {
+    background-color: black;
+    border-radius: 6px;
+    z-index: 9999;
+}
+
+body {
+    cursor: none;
+    overflow-x: hidden;
+}
+
+.custom-cursor {
+    width: 45px;
+    height: 45px;
+    background-image: url('Wednesday_Addams.png');
+    background-size: cover;
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999
+}
+
+.main_parallax {
+    display: flex;
+    background: url('background.png') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    ;
+}
+
+#parallax_text {
+    font-size: 6em;
+    letter-spacing: 12px;
+    color: rgb(37, 54, 79);
+    font-style: italic;
+    text-shadow: 6px 2px 2px white;
+}
+
+#grass {
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    bottom: 0;
+}
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    color: white;
+    align-items: center;
+    position: absolute;
+
+}
+
+.main_p {
+    font-size: 3em;
+    text-align: center;
+    padding: 5vh 0 0 0;
+}
+
+.text1,
+.text2,
+.text3 {
+    padding: 5vh 0 0 0;
+    font-family: none;
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+.main_text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.text_img {
+    display: flex;
+}
+
+.main_img {
+    width: 40vw;
+    height: 100vh;
+}
+
+.amv {
+    padding: 0 0 10vh 0;
+}
+
+#tree_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#tree_right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+#gate_left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-290px);
+}
+
+#gate_right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(290px);
+}
+
+.Home:hover,
+.About:hover,
+.Service:hover,
+.Contact:hover {
+    color: red;
+}
+
+.logo:hover {
+    color: red;
+}
